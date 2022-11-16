@@ -1,0 +1,195 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:  rgb(249, 250, 254);
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans';
+    src: url('../ASSETS/FONTS/PlusJakartaSans-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans-ExtraBold';
+    src: url('../ASSETS/FONTS/static/PlusJakartaSans-ExtraBold.ttf') format('truetype');
+    font-weight:bold;
+    font-style:normal;
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans-Medium';
+    src: url('../ASSETS/FONTS/static/PlusJakartaSans-Medium.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+
+.notifications {
+    margin: 0 auto;
+    max-width: 60%;
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 16px;
+}
+
+@media screen and (max-device-width: 480px) {
+    .notifications {
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 8px;
+        padding: 10px;
+    }
+    
+}
+
+.headNot {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titleNot {
+    display: flex;
+    font-family: 'PlusJakartaSans-ExtraBold';
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+#numberNot {
+    background-color: rgb(8,50,122);
+    color: white;
+    padding: 3px;
+    border-radius: 4px;
+    min-height: 10px;
+    min-width: 25px;
+    margin: 12px;
+    margin-bottom: 0px;
+
+    font-size: 12px;
+    text-align: center;
+}
+
+#statsNot {
+    font-family: 'PlusJakartaSans';
+    color: gray;
+    font-size: 12px;
+}
+
+.notification {
+    padding: 10px;
+    border-radius: 4px;
+    margin: 8px;
+    display: flex;
+    gap: 12px;
+
+    align-items: center;
+}
+
+.space {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.open {
+    justify-content: space-between;
+}
+
+.dontRead {
+    background-color: rgb(246, 250, 253);
+}
+
+.notification img {
+    width: 50px;
+    height: 50px;
+}
+
+#textNot {
+    flex: fill;
+}
+
+.ticket {
+    font-family: 'PlusJakartaSans';
+    font-size: 12px;
+    color: rgb(92, 98, 110);
+    padding: 10px;
+    border: 1px solid rgb(164, 174, 194);
+    border-radius: 4px;
+    margin: 12px;
+}
+
+.ticket:hover {
+    background-color: rgb(229, 239, 249);
+    cursor: pointer; 
+    border: 1px solid rgb(229, 239, 249);
+}
+
+span.name,
+span.phrase,
+span.msg,
+span.group {
+    font-size: 12px;
+}
+
+span.name,
+span.group,
+span.phrase {
+    font-family: 'PlusJakartaSans-ExtraBold';
+}
+
+span.name{
+    color: black;
+}
+
+span.group {
+    color: rgb(8,50,122);
+}
+
+
+span.msg {
+    font-family: 'PlusJakartaSans';
+    color: rgb(92, 98, 110);
+}
+
+span.phrase {
+    color: rgb(92, 98, 110);
+}
+
+span.phrase:hover,
+span.name:hover,
+.notification img {
+    font-family: 'PlusJakartaSans-ExtraBold';
+    color: rgb(8,50,122);
+    cursor: pointer;
+}
+
+span.redCircle {
+    content: ' \25CF';
+    color: red;
+    line-height: 0px;
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+#time {
+    color: gray;
+    font-weight: lighter;
+}
+
+#statsNot {
+font-family: 'PlusJakartaSans-ExtraBold';
+}
+
+#statsNot:hover {
+    color: rgb(8,50,122);
+    transition: 0.5s;
+    cursor: pointer;
+}
